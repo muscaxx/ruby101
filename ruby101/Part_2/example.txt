@@ -1,0 +1,4 @@
+messi,barcelona
+ronaldo,madrid
+zlatan,psg
+alex,fenerbahce
