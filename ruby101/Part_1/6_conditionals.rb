@@ -8,6 +8,12 @@ puts 5 <= 10 #true
 puts 5 == 5  #true
 puts 5 != 3  #true
 
+#logical operators
+=begin
+   ||   => OR
+   &&   => AND
+   !    => NOT
+=end
 
 #basic
 grade = 85
@@ -55,7 +61,7 @@ else
 end
 
 
-#when case
+#when case then
 day = gets.chomp.to_i
 case day
 when 1
@@ -75,3 +81,60 @@ when 7
 else
     puts "Invalid day"
 end
+
+computer = "c64"
+year = case computer
+  when "c64" then "1982"
+  when "c16" then "1984"
+  when "amiga" then "1985"
+  else
+    "Not found"
+end
+
+puts "#{computer} release year #{year}"    # c64 release year 1982
+
+
+#unless
+age = 19
+unless age >= 18
+    puts "You are not eligible to vote."
+else
+    puts "You are eligible to vote."
+end
+
+
+#break
+i = 1
+while i <= 10
+    if i == 6
+        break
+    end
+    puts i
+    i += 1
+end
+
+
+#until
+i = 0
+until i == 10 do
+  puts "i = #{i}"
+  i += 1
+end
+
+
+#ternaty
+age = 20
+message = age >= 18 ? "You are eligible to vote." : "You are not eligible to vote."
+puts message #You are eligible to vote.
+
+
+#begin end
+BEGIN { puts "starting time #{Time.now.to_s}" }
+END { puts "ending time #{Time.now.to_s}" }
+
+def say_hello(username)
+  "Merhaba #{username}"
+end
+
+puts say_hello "Uğur"
+sleep 5  
