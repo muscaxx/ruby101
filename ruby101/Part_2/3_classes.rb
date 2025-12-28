@@ -61,3 +61,16 @@ end
 
 film1 = Film.new("Recep İvedik 1", ["Şahan Gökbakar", "Lemi Filozof"], 2008)
 film1.isActorIncluded("Şahan Gökbakar")
+
+#example
+class Greet
+    attr_accessor :email
+    def email(email)
+        @email = email
+    end
+end
+
+user = Greet.new
+p user
+puts user.email("vigo@gmail.com")
+p user

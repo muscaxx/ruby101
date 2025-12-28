@@ -26,3 +26,4 @@ end
 multiply(3, 4)  #12 only returns the value but does not print it
 result = multiply(4, 5)
 puts result  #20
+

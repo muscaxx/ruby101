@@ -1,7 +1,7 @@
 #this is a simple Ruby script that prints "hello world" to the console in two different ways.
 print "hello world"
 puts "hello world"
-
+p "hello world"
 
 #veriables
 name = "Alice"       #string
